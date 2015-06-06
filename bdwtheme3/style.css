@@ -1,0 +1,147 @@
+body {color: black; background: #ffffff; margin: 0; padding: 0; font-size:12px;}
+table {width: 100%; margin: 0; padding: 0; font-size: small}
+table td {padding: 0; border-width: 0; vertical-align: top; font-family:
+Verdana, Arial, Helvetica, sans-serif;}
+a {color: #FF0000; text-decoration: none; font-weight: bold;
+background-color: transparent;}
+a:hover {color: #000000;}
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+ul { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; list-style: square inside; color: #2F5376}
+input.formButton {}
+
+
+
+.item {width: 100%; margin-bottom: 3px; border: 1px solid #FF0000;}
+.itemHead { padding: 3px; background-color: #FF0000; color: #ffffff; }
+.itemInfo { text-align: right; padding: 3px; background-color: #ffffff;}
+.itemTitle a {width: 100%; font-weight: bold;  color: #ffffff; background-color: #FF0000; font-family: Verdana}
+.itemPoster {font-size: 80%; }
+.itemPostDate {font-size: 80%;}
+.itemStats {font-size: 80%;}
+.itemBody {padding-left: 5px; border-top: 1px solid #FF0000;}
+.itemText {margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;}
+.itemText:first-letter {font-size: 110%;}
+.itemFoot {text-align: right; padding: 3px; background-color: #FF0000}
+.itemFoot a {color: #ffffff; }
+.itemAdminLink {color: #ffffff; font-size: 90%;}
+.itemAdminLink a {color: #ffffff; font-size: 90%;}
+.itemPermaLink {color: #ffffff; font-size: 80%;}
+
+th {background-color: #2F5376; color: #ffffff; padding : 2px; vertical-align : middle; font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+td#headerlogo {color: #ffffff; background-color: #FF0000; vertical-align: middle; border-left: 1px solid #FF0000;}
+td#headerlogo a {color: #ffffff;}
+td#headerlogotwo {background-color: #FF0000; vertical-align: middle; border-right: 1px solid #FF0000;}
+td#headerbanner {width: 100%; background-color: #FF0000; vertical-align: middle; text-align:right;}
+td#headerbar {text-align: center; border-bottom: 0px solid #ffffff; font-weight: bold; color: #ffffff; background:#541C1C; height:1px; border-right: 1px solid #FF0000; border-left: 1px solid #FF0000;}
+td#headerbar a {color: #ffffff; }
+td#bottombar {text-align: center; font-weight: bold; color: #ffffff; background:#541C1C; height:1px; border-right: 1px solid #FF0000; border-left: 1px solid #FF0000; border-bottom: 1px solid #FF0000;}
+td#bottombar a {color: #ffffff; }
+td#StyleMenu {font-size: 120%; text-align: center; font-weight: bold; color: #ffffff; background: #FF7F7F; padding: 3px; border-right: 1px solid #FF0000; border-left: 1px solid #FF0000;}
+td#StyleMenu a {color: #ffffff}
+td#StyleMenutwo {font-weight: bold; color: #ffffff; background:#FF7F7F; padding: 3px;}
+td#topbanner {border-right: 1px solid #FF0000; border-left: 1px solid #FF0000; }
+
+td#leftcolumn {color: #000000; background-color: #ffffff; width: 300px;  font-size:100%; padding: 5px; }
+td#leftcolumn th {background-color: #FF0000; vertical-align: middle;}
+td#leftcolumn div.blockTitle {width: 300px; margin-left: 3px; padding: 3px; background-color: #FF7F7F; color: #ffffff; font-weight: bold; border-left: 1px solid #FF0000; border-right: 1px solid #FF0000; border-top:1px solid #FF0000;}
+td#leftcolumn div.blockContent {color: #ffffff; margin-left: 3px; line-height: 120%; margin-top:0px;margin-bottom:5px; border-right: 1px solid #FF0000; border-bottom: 1px solid #FF0000; border-left: 1px solid #FF0000; border-top: 1px solid #FF0000;}
+td#leftcolumn div.blockContent a {color: #ff0000;}
+
+td#centercolumn {background: #ffffff; width: 85%; text-align: left; font-size: 100%;}
+td#centercolumn th {background-color: #FF0000; color: #FFFFFF; vertical-align: middle; }
+td#centercolumn th a {color: #ffffff; }
+td#centerCcolumn {width: 100%; padding: 0px 3px 5px 3px;}
+td#centerCcolumn .blockTitle {border-left: 1px solid #FF0000; border-right: 1px solid #FF0000; border-top:1px solid #FF0000; background-color: #FF7F7F; padding: 3px; color: #FFFFFF; font-weight: bold; margin-top: 0px; margin-right: 0px;  margin-left: 0px;}
+td#centerCcolumn div.blockContent {border-left: 1px solid #FF0000; border-right: 1px solid #FF0000; border-bottom: 1px solid #FF0000; border-top:1px solid #FF0000; padding: 3px; margin-right: 0px; margin-left: 0px; margin-bottom: 2px; line-height: 120%;}
+td#centerLcolumn {width: 50%; padding: 0px 3px 0px 0px;}
+td#centerLcolumn .blockTitle {border-left: 1px solid #FF0000; border-right: 1px solid #FF0000; border-top:1px solid #FF0000; background-color: #FF7F7F; padding: 3px; color: #FFFFFF; font-weight: bold; margin-top: 0px; margin-right: 0px;  margin-left: 0px;}
+td#centerLcolumn div.blockContent {border-left: 1px solid #FF0000; border-right: 1px solid #FF0000; border-bottom: 1px solid #FF0000; border-top:1px solid #FF0000; padding: 3px; margin-left: 0px; margin-right: 0px; margin-bottom: 2px; line-height: 120%;}
+td#centerRcolumn {width: 50%; padding: 0px 3px 0px 0px;}
+td#centerRcolumn .blockTitle {border-left: 1px solid #FF0000; border-right: 1px solid #FF0000; border-top:1px solid #FF0000; background-color: #FF7F7F; padding: 3px; color: #FFFFFF; font-weight: bold; margin-top: 0px; margin-right: 0px;  margin-left: 0px;}
+td#centerRcolumn div.blockContent {border-left: 1px solid #FF0000; border-right: 1px solid #FF0000; border-bottom: 1px solid #FF0000; border-top:1px solid #FF0000; padding: 3px; margin-left: 0px; margin-right: 0px; margin-bottom: 2px; line-height: 120%;}
+
+
+td#bottomCcolumn { padding: 0px 3px 1px 3px;}
+td#bottomCcolumn .blockTitle {border-left: 1px solid #FF0000; border-right: 1px solid #FF0000; border-top:1px solid #FF0000; background-color: #FF7F7F; padding: 3px; color: #FFFFFF; font-weight: bold; margin-top: 0px; margin-right: 0px;  margin-left: 0px;}
+td#bottomCcolumn div.blockContent {border-left: 1px solid #FF0000; border-right: 1px solid #FF0000; border-bottom: 1px solid #FF0000; border-top:1px solid #FF0000; padding: 3px; margin-right: 0px; margin-left: 0px; margin-bottom: 2px; line-height: 120%;}
+td#bottomLcolumn {width: 50%; padding: 0px 3px 0px 0px;}
+td#bottomLcolumn .blockTitle {border-left: 1px solid #FF0000; border-right: 1px solid #FF0000; border-top:1px solid #FF0000; background-color: #FF7F7F; padding: 3px; color: #FFFFFF; font-weight: bold; margin-top: 0px; margin-right: 0px;  margin-left: 0px;}
+td#bottomLcolumn div.blockContent {border-left: 1px solid #FF0000; border-right: 1px solid #FF0000; border-bottom: 1px solid #FF0000; border-top:1px solid #FF0000; padding: 3px; margin-left: 0px; margin-right: 0px; margin-bottom: 2px; line-height: 120%;}
+td#bottomRcolumn {width: 50%; padding: 0px 3px 0px 0px;}
+td#bottomRcolumn .blockTitle {border-left: 1px solid #FF0000; border-right: 1px solid #FF0000; border-top:1px solid #FF0000; background-color: #FF7F7F; padding: 3px; color: #FFFFFF; font-weight: bold; margin-top: 0px; margin-right: 0px;  margin-left: 0px;}
+td#bottomRcolumn div.blockContent {border-left: 1px solid #FF0000; border-right: 1px solid #FF0000; border-bottom: 1px solid #FF0000; border-top:1px solid #FF0000; padding: 3px; margin-left: 0px; margin-right: 0px; margin-bottom: 2px; line-height: 120%;}
+
+
+div#content {text-align: left; padding: 5px;}
+
+td#rightcolumn {background: #ffffff; width: 300px; border-left: 0px; font-size:100%; padding: 5px;}
+td#rightcolumn th {background-color: #FF0000; color: #FFFFFF; vertical-align: middle;}
+td#rightcolumn div.blockTitle {width: 300px; border-left: 1px solid #FF0000; border-right: 1px solid #FF0000; border-top:1px solid #FF0000; margin-right: 3px; padding: 3px; background-color: #FF7F7F; color: #ffffff; font-weight: bold;}
+td#rightcolumn div.blockContent {margin-right: 3px; line-height: 120%; margin-top:0px;margin-bottom:5px; border-right: 1px solid #FF0000;border-bottom: 1px solid #FF0000; border-left: 1px solid #FF0000; border-top: 1px solid #FF0000; }
+
+td#sidebanners {background: #ffffff;}
+
+
+tr#footerbar {text-align:center; background-image: url(hbar.gif);}
+table.maintable { border-right: 1px solid #FF0000; border-left: 1px solid #FF0000;}
+
+td#mainmenu a {background-color: #FFBFBF; display: block; margin: 0; padding: 4px; color:#FF0000}
+td#mainmenu a:hover {background-color: #ffffff; }
+td#mainmenu a.menuTop {padding-left: 2px; border-top: none; border-right: 1px solid #ffffff; border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; border-right: 0px solid #ffffff}
+td#mainmenu a.menuMain {padding-left: 4px; border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; border-bottom: 1px solid #ffffff;}
+td#mainmenu a.menuSub {padding-left: 10px; border-left: 7px solid #ffffff; border-bottom: 1px solid #ffffff}
+
+td#usermenu a {background-color: #FFBFBF; display: block; margin: 0; padding: 4px; border-right: 1px solid #ffffff; border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; border-right: 0px solid #ffffff; color: #FF0000}
+td#usermenu a:hover {background-color: #ffffff; }
+td#usermenu a.menuTop {border-top: none; border-bottom: 1px solid #ffffff; border-right: 0px solid #ffffff}
+td#usermenu a.highlight {background-color: #fcc; }
+
+
+.outer th {background-color: #FF0000;}
+.outer {background-color: #ffffff; border: 2px solid #ffffff;}
+.head {background-color: #FFBFBF; padding: 5px; font-weight: bold;}
+.even {background-color: #fffff1; color:#000000; padding: 5px;}
+.odd {background-color: #fffff2; padding: 5px;}
+.foot {background-color: #FFBFBF; color:#000000; padding: 5px; font-weight: bold;}
+tr.even td {background-color: #FFBFBF; padding: 5px;}
+tr.odd td {background-color: #DDA6A6; padding: 5px;}
+tr.StyleMenu {font-weight: bold; color: #ffffff; background:#FF0000; background-image: url(bluebar.gif);background-repeat: repeat-x; padding: 3px;}
+
+div.errorMsg { background-color: #FFCCCC; text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.confirmMsg { background-color: #DDFFDF; color: #136C99;text-align: center; border-top: 1px solid #DDDDFF; border-left: 1px solid #DDDDFF; border-right: 1px solid #AAAAAA; border-bottom: 1px solid #AAAAAA; font-weight: bold; padding: 10px;}
+div.resultMsg { background-color : #CCCCCC; color: #333333; text-align: center; border-top: 1px solid silver; border-left: 1px solid silver; font-weight: bold; border-right: 1px solid #666666; border-bottom: 1px solid #666666; padding: 10px;}
+
+div.xoopsCode { background: #FFFFFF; border: 1px inset #FF0000; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+div.xoopsQuote { background: #FFFFFF; border: 1px inset #FF0000; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px 6px;}
+
+
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: 10px; color: #2F5376; font-weight:bold; border: 1px solid silver; background-color: #ffffff; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #2F5376;font-weight:bold; font-size: 10px;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: 10px;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName {}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: smaller}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+fieldset {
+border-top: 0px solid #ffffff; border-bottom: 0px solid #ffffff; border-right: 0px solid #ffffff; border-left: 0px solid #ffffff
+}
+
+#holder {
+width: 880px;
+margin: 0px auto 0 auto;
+text-align: left;
+}
+
+#holder #rwbanner {text-align: center;}

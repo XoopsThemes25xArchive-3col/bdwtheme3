@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="revisit-after" content="7 days" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script></head>
+<body>
+<div id=holder>
+<div align="center">
+  <table cellspacing="0">
+    <tr id="header">
+      <td width="50%" id="headerlogo" height="146" align="center" background="<{$xoops_imageurl}>images/header.jpg"><a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>logo.gif" title="<{$xoops_sitename}>" alt="<{$xoops_sitename}>" /></a></td>
+      
+    </tr></table>
+</div>
+<div align="center">
+<table cellspacing="0">
+<tr class="StyleMenu">
+      <td width="100%" id="StyleMenu"><b>| <a href="<{$xoops_url}>/">Home</a> | <a href="<{$xoops_url}>/modules/news/">News</a> | 
+        <a href="<{$xoops_url}>/modules/PDdownloads/">Audio</a> | 
+        
+        </b></td>
+
+    </tr>
+
+    <tr>
+      <td id="headerbar" colspan="2"><b><{if !$xoops_isuser}>
+Welcome Guest [<a href="<{$xoops_url}>/user.php">Login</a> | <a href="<{$xoops_url}>/register.php">Register</a>] 
+<{else}>
+Welcome <{$xoops_uname}> | <a href="<{$xoops_url}>/user.php">View Profile</a> | <a href="<{$xoops_url}>/edituser.php">Edit Account</a> | <a href="<{$xoops_url}>/notifications.php">Notifications</a> | <a href="<{$xoops_url}>/user.php?op=logout">Log Out</a>
+<{php}>
+GLOBAL $xoopsUser;
+$pm_handler =& xoops_gethandler('privmessage');
+$uid = $xoopsUser->getVar('uid');
+$criteria = new CriteriaCompo(new Criteria('read_msg', 0));
+$criteria->add(new Criteria('to_userid', $uid));
+$msgcount = $pm_handler->getCount($criteria);
+$GLOBALS['xoopsTpl']->assign('msgcount', $msgcount);
+<{/php}>
+<{/if}><{if $msgcount > 0}>
+ | <a class="highlight" href="<{$xoops_url}>/viewpmsg.php">New Message (<{$msgcount}>)</a>
+
+<{/if}><{if $xoops_isadmin}> | <a href="<{$xoops_url}>/admin.php">Admin</a><{/if}></b></td>
+    </tr>
+<tr>
+      <td id="topbanner"><div align="center">
+<center>
+  <{$xoops_banner}></center>
+</div>
+</td>
+    </tr>
+
+  </table>
+</div>
+<div align="center">
+<table class="maintable" cellspacing="0">
+<tr>
+<{if $xoops_showlblock == 1}>
+<td id="leftcolumn">
+<!-- Start left blocks loop -->
+<{foreach item=block from=$xoops_lblocks}>
+<{include file="$xoops_theme/theme_blockleft.html"}>
+<{/foreach}>
+<!-- End left blocks loop -->
+</td>
+<{/if}>
+
+<td id="centercolumn">
+<!-- Display center blocks if any -->
+<{if $xoops_showcblock == 1}>
+
+
+<table cellspacing="0">
+<tr>
+<td id="centerCcolumn" colspan="2">
+<!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoops_ccblocks}>
+<{include file="$xoops_theme/theme_blockcenter_c.html"}>
+<{/foreach}>
+<!-- End center-center blocks loop -->
+</td>
+</tr>
+
+
+<tr>
+<td id="centerLcolumn">
+<!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoops_clblocks}>
+<{include file="$xoops_theme/theme_blockcenter_l.html"}>
+<{/foreach}>
+<!-- End center-left blocks loop -->
+
+
+</td><td id="centerRcolumn">
+<!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoops_crblocks}>
+<{include file="$xoops_theme/theme_blockcenter_r.html"}>
+<{/foreach}>
+<!-- End center-right blocks loop -->
+</td>
+
+</tr>
+</table>
+
+
+
+<{/if}> <!-- End display center blocks -->
+
+
+<div id="content">
+<{$xoops_contents}>
+</div>
+
+<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+<div>
+  
+  <table cellspacing="0" class="centercol"><{if $xoBlocks.page_bottomcenter}>
+    <tr>
+      <td id="bottomCcolumn" colspan="2"> <{foreach from=$xoBlocks.page_bottomcenter item=block}><{include file="$xoops_theme/theme_blockcenter_c.html"}><{/foreach}> </td>
+    </tr>
+<{/if}> <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+    <tr>
+      <td id="bottomLcolumn"> <{foreach from=$xoBlocks.page_bottomleft item=block}><{include file="$xoops_theme/theme_blockcenter_l.html"}><{/foreach}> </td>
+      <td id="bottomRcolumn"> <{foreach from=$xoBlocks.page_bottomright item=block}><{include file="$xoops_theme/theme_blockcenter_r.html"}><{/foreach}> </td>
+    </tr>
+<{/if}>      </table>
+  
+</div>
+<{/if}>
+
+</td>
+
+<{if $xoops_showrblock == 1}>
+<td id="rightcolumn">
+<!-- Start right blocks loop -->
+<{foreach item=block from=$xoops_rblocks}>
+<{include file="$xoops_theme/theme_blockright.html"}>
+<{/foreach}>
+<!-- End right blocks loop -->
+</td>
+<{/if}>
+
+
+</tr>
+</table>
+
+</div>
+<div id="myfooter" align="center">
+<!-- DO NOT REMOVE ADVERTISING - READ NOTES -->
+<table cellspacing="0">
+<tr>
+      <td id="bottombar" colspan="2"><b>Theme Designed by Barry Walker of <a href="http://www.bdwwebs.com">bdwwebs.com</a></b></td>
+<!-- DO NOT REMOVE ADVERTISING - READ NOTES -->    
+</tr>
+<tr>
+<td class="itemInfo" height="30" valign="middle" align="center"><div style="text-align: center; padding-top: 2px; font-size: 10px"><{$xoops_footer}></div></td></tr></table>
+
+<!-- DO NOT REMOVE ADVERTISING - READ NOTES -->
+<table cellspacing="0">
+<tr>
+<td class="itemInfo" height="30" valign="middle" align="center"><div style="text-align: center; padding-top: 2px; font-size: 10px"><a href="http://www.bdwwebs.com/"><img border="0" src="<{$xoops_imageurl}>bdwwebs.gif" alt="Theme Designed by bdwwebs.com"></img></a></div></td></tr></table>
+<!-- DO NOT REMOVE ADVERTISING - READ NOTES -->
+
+
+</div>
+
+</div>
+</body>
+</html>

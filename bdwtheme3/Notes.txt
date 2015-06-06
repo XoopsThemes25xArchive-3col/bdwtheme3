@@ -1,0 +1,66 @@
+******************
+BDWTheme3 1.0
+******************
+
+(c) Barry Walker 2007 bdwwebs.com
+
+
+******************
+Your Rights:
+******************
+
+You can edit or use this theme on commercial or no-commercial websites as long as you keep the 
+copyright & advertising intact.
+
+If you wish to remove advertising then please read on.
+
+
+******************
+Features:
+******************
+
+    * Background image in masthead can be changed to another one
+    * All important text resizable in ALL browsers.
+    * Menu in Header. Also editable to suit your own site within theme.html.
+    * User Menu in header also editable within theme.html.
+    * Does not squash logo.
+    * Bottom Blocks compatible.
+    *
+    * If any of you find any problems with this theme then please report it at bdwwebs.com.
+
+
+******************
+Removing Adverts:
+******************
+
+If you wish to legally remove adverts from our themes then please send us a donation by 
+going to our website and clicking "Donations" in the main menu.
+
+Once you have done this then simply go into theme.html using your FTP software and
+editing the HTML remove everything between the <!-- DO NOT REMOVE ADVERTISING - READ NOTES -->
+
+
+******************
+Change Log
+******************
+
+n/a
+
+
+******************
+Editing the Menu
+******************    
+
+Editing the Menu is simple.
+
+1. Load up FTP Software
+2. Find the theme.html in the BDWTheme folder
+3. You can add a link like the one below after the last one
+
+ | <a href="<{$xoops_url}>/modules/news/">News</a>
+
+Replace the part after <{$xoops_url}> with the path to the link and replace "News" with
+whatever you want.
+
+If you wish to delete a Link the simply delete the appropriate line that looks like
+the one above but obviously the one that has the link you dont want. 
